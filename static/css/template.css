@@ -1,0 +1,82 @@
+#drop-area {
+  border: 4px dashed rgb(73, 73, 73);
+  border-radius: 20px;
+  /* width: 500px; */
+  height: 500px;
+  font-family: sans-serif;
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 50%;
+}
+
+#drop-area:hover { 
+  border: 6px dashed rgb(73, 73, 73);
+  background-color: #ddd;
+}
+
+#drop-area.highlight {
+  border-color: purple;
+}
+
+#upload-icon{ 
+  font-size: 50px; 
+  color:rgb(49, 41, 124);
+  display: block;
+  text-align: center;
+  line-height: 500px;
+}
+
+#upload-icon:hover{ 
+  font-size: 60px;
+}
+
+p {
+  margin-top: 0;
+}
+
+.my-form {
+  margin-bottom: 10px;
+}
+
+#gallery {
+  margin-top: 10px;
+}
+
+#gallery img {
+  width: 150px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.button {
+  cursor: pointer;
+}
+
+#fileElem {
+  display: none;
+}
+
+#defaultCanvas0{ 
+  display: block;
+  /* background-color: #ddd; */
+  border-radius: 20px;
+}
+
+.hidden{ 
+  display: none !important;
+}
+
+#loading-area {
+  width: 100%;
+  background-color: #ddd;
+}
+
+#progress-bar {
+  width: 1%;
+  height: 30px;
+  background-color: #04AA6D;
+}
+  

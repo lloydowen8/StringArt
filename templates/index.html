@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+        <meta charset="utf-8">
+        <title>String Art</title>
+        <script src="https://kit.fontawesome.com/5787488f56.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/template.css') }}">
+        <script src="{{ url_for('static', filename='js/canvas.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/stringImg.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/resize.js') }}"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.min.js"></script>
+    </head>
+    <body>
+        <div id="drop-area">
+            <form class="my-form" id="image-form">
+                <input type="file" id="fileElem" name="fileElem" multiple accept="image/*" onchange="handleFiles(this.files)">
+                <label for="fileElem" class="button" id="upload-label"><i id="upload-icon" class="fas fa-file-upload"></i></label>
+            </form>
+            <label for="imageSize">Size Selector</label>
+            <input type="range" min="50" max="500" value="100" id="imageSize">
+            <form id="param-form" name="param-form">
+                <label for="numPins">Number of pins</label>
+                <input type="number" value="300" name="numPins" id="numPins">
+                <label for="maxLines">Max lines</label>
+                <input type="number" value="4000" name = "maxLines" id="maxLines">
+                <label for="lineWeight">Line Weight</label>
+                <input type="number" value="10" name="lineWeight" id="lineWeight">
+                <input type="submit" value="Submit" name="formSubmit" id="formSubmit"></input>
+            </form>
+        </div>
+        <div id="loading-area" class="hidden">
+            <div id="progress-bar"></div>
+        </div>
+        <div id="display-area" class="hidden">
+        </div>
+    </body>
+</html>
